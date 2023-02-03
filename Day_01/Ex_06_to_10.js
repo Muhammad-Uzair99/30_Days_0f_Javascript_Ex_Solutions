@@ -30,7 +30,11 @@ let age = 23;
          single line.
 */
 
-let myFirstName = "Muhammad", myLastName = "Uzair", myMaritalStatus = "Single", myCountry = "Pakistan", myAgeAge = "23";
+let myFirstName = "Muhammad", 
+    myLastName = "Uzair",
+    myMaritalStatus = "Single", 
+    myCountry = "Pakistan", 
+    myAgeAge = "23";
 
 /*
   Ex_10. Declare two variables myAge and yourAge and 
