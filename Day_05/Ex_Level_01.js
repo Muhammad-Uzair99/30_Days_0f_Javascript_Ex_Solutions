@@ -127,16 +127,69 @@ itCompanies.indexOf("Amazon") >= 0
   method
 */
 
+let filterArr = [];
+for (let i = 0; i < itCompanies.length; i++){
+  if (itCompanies[i].includes("oo")) {
+    filterArr.push(itCompanies[i]);
+  }
+}
 
+console.log(filterArr);
 
 /*
-  Sort the array using sort() method
-  Reverse the array using reverse() method
-  Slice out the first 3 companies from the array
-  Slice out the last 3 companies from the array
-  Slice out the middle IT company or companies from the array
-  Remove the first IT company from the array
-  Remove the middle IT company or companies from the array
-  Remove the last IT company from the array
-  Remove all IT companies
-  */
+  Ex 15. Sort the array using sort() method
+*/
+
+console.log(itCompanies.sort());
+
+/*
+  Ex 16. Reverse the array using reverse() method
+*/
+
+console.log(itCompanies.reverse());
+
+/*
+  Ex 17. Slice out the first 3 companies from the array
+*/
+
+console.log(itCompanies.slice(0, 3));
+
+/*
+  Ex 18. Slice out the last 3 companies from the array
+*/
+
+console.log(itCompanies.slice(itCompanies.length-3));
+
+/*
+  Ex 19. Slice out the middle IT company or companies from the array
+*/
+
+console.log(itCompanies.slice(3, 4));
+
+/*
+  Ex 20. Remove the first IT company from the array
+*/
+
+console.log(itCompanies.shift());
+
+/*
+  Ex 21. Remove the middle IT company or companies from the array
+*/
+
+console.log(itCompanies.splice(Math.floor((itCompanies.length - 1) / 2), 2));
+
+/*
+  Ex 22. Remove the last IT company from the array
+*/
+
+console.log(itCompanies.pop());
+
+/*
+  Ex 23. Remove all IT companies
+*/
+
+let iter = itCompanies.length;
+for (let j = 0; j < iter; j++){
+  itCompanies.pop();
+}
+console.log(itCompanies);
